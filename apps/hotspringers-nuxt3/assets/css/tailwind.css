@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+}
+
+.tooltip .tooltip-text {
+  @apply invisible absolute inline-block p-1 z-1000 rounded-lg bg-black text-white capitalize;
+}
+
+.bottom {
+  @apply mt-16 -ml-2;
+}
+
+.left {
+  @apply -ml-22;
+}
+
+.tooltip:hover .tooltip-text {
+  @apply visible;
+}
